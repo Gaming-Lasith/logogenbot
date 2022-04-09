@@ -93,6 +93,26 @@ async def on_off_antiarab(_, message: Message):
           ),
     )
 
+#◇──────────────────────────────────────◇ 
+
+
+@logo.on_message(filters.command("wall"))
+async def on_off_antiarab(_, message: Message):
+    text = message.text.split(None, 1)[1]
+    photo = get(f"http://single-developers.up.railway.app/write?write={text}").history[1].url
+    await message.reply_chat_action("upload_photo")
+    await logo.send_photo(message.chat.id, photo=photo, caption=caption.format(message.from_user.mention),
+                 reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "🍀 Open In Google 🍀", url=f"{photo}"
+                    )
+                ]
+            ]
+          ),
+    )
+
 
 logo.run()
 
