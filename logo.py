@@ -17,11 +17,11 @@ caption = """
 
 ◇───────────────◇
 
-🚀 **Created By** : **[LOGO GENERATE BOT 🔅](https://t.me/The_logo_generate_bot)**
+🚀 **Created By** : **[LOGO GENERATE BOT 🧑‍💻](https://t.me/TheLogoGeneratorBot)**
 
 🌺 **Requestor** : ** {} **
 
-🍀 **Powered By **  : **[🍀 zoneunlimited 🍀 ](https://t.me/zoneunlimited)**
+🍀 **Powered By **  : **[🔥 Gaming Lasith 🔥](https://t.me/GL89X)**
 
 ◇───────────────◇️  
     """
@@ -32,7 +32,7 @@ caption = """
 @logo.on_message(filters.command("start"))
 async def start(client,message):
     await message.reply_chat_action("typing")
-    await message.reply("🍀 Hi I am Logo Generate Bot Telegram...")
+    await message.reply("🍀 Hi I am Logo Generator Bot Telegram...")
 
 
 #◇───────────────────────────────────────◇ 
@@ -97,5 +97,5 @@ async def on_off_antiarab(_, message: Message):
 logo.run()
 
 app.start()
-LOGGER.info("SL Bot Developers 🇱🇰 corporation ©")
+LOGGER.info("© @GL89X")
 idle()
